@@ -1,4 +1,4 @@
-import { defineQuestions, type Question } from '#lib/types.ts';
+import { defineQuestions } from '#lib/types.ts';
 
 export const questions = defineQuestions([
 	{
@@ -11,7 +11,7 @@ export const questions = defineQuestions([
 			"C'mon, what's with the mask? Kinda cringy, don'tcha think?"
 		],
 		choices: ['Sure is.', 'Shut up...', "I'm secretly a kid."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['bad', 'bad', 'ok', 'good'],
 			['ok', 'good', 'good', 'ok']
@@ -24,7 +24,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ["...This shit's hilarious.", "Why're you so desperate?"],
 		choices: ["I don't want to die.", "There's something I must do.", 'I want girls to like me.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'bad', 'good', 'ok']
@@ -40,7 +40,7 @@ export const questions = defineQuestions([
 			"You're violatin' the weapons code or whatever, man."
 		],
 		choices: ["I didn't know.", "It's for self-defense.", 'Pretty cool, huh?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'ok', 'good'],
 			['ok', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'ok']
@@ -56,7 +56,7 @@ export const questions = defineQuestions([
 			"Hell, I got all sortsa girls lined up if you're into that."
 		],
 		choices: ['Really?', "You're trying way too hard.", "I'm not interested."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'bad'],
 			['bad', 'good', 'bad', 'good']
@@ -69,7 +69,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['Yo, look what you did!', 'You knocked me down, and now my goddamn watch is broken!'],
 		choices: ['My apologies.', 'Like I care.', 'You should "watch" your mouth.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'bad'],
 			['bad', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'ok']
@@ -85,7 +85,7 @@ export const questions = defineQuestions([
 			'Seriously, cosplaying in a place like this? Are you just bored outta your mind?'
 		],
 		choices: ['I am.', "I'm actually very busy.", 'Shut up!'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'ok'],
 			['good', 'good', 'bad', 'good'],
 			['bad', 'bad', 'bad', 'good']
@@ -98,7 +98,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['So is this the end?', 'I coulda been a star...'],
 		choices: ['A star?', "That's not happening.", 'Are you giving up?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['bad', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'good']
@@ -114,7 +114,7 @@ export const questions = defineQuestions([
 			'What kinda guys piss you off?'
 		],
 		choices: ['Pissy guys.', 'Guys with no sense of humor.', 'I never get mad.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'good'],
 			['good', 'ok', 'bad', 'ok']
@@ -130,7 +130,7 @@ export const questions = defineQuestions([
 			"It's pretty rude, man."
 		],
 		choices: ["No it isn't.", "It's part of my face.", 'My apologies.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['good', 'ok', 'ok', 'good']
@@ -150,7 +150,7 @@ export const questions = defineQuestions([
 			"I'm the interrogator here.",
 			'I have nothing for you.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'good', 'ok', 'good']
@@ -166,7 +166,7 @@ export const questions = defineQuestions([
 			"You tryin' to get somethin' from me?"
 		],
 		choices: ['Yup.', 'No... Nothing at all...', 'Dance for me!'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'good', 'ok', 'good'],
 			['good', 'ok', 'good', 'ok']
@@ -182,7 +182,7 @@ export const questions = defineQuestions([
 			"It'd prolly be a big downer if the birthday boy didn't show to his party, sooo..."
 		],
 		choices: ['Happy birthday.', 'I had no idea.', "This'll be your deathday too."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['bad', 'ok', 'good', 'good']
@@ -195,7 +195,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ['...Yo, look at me.', "I know when I'm gettin' all sweaty. I'm glistenin', aren't I?"],
 		choices: ['Like a disco ball.', 'Not at all.', 'Why does that matter?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['good', 'bad', 'good', 'bad'],
 			['ok', 'good', 'ok', 'good']
@@ -211,7 +211,7 @@ export const questions = defineQuestions([
 			'Did I... lose?'
 		],
 		choices: ['Yup.', 'Not sure yet.', 'Nah, you totally won.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['good', 'bad', 'good', 'bad']
@@ -227,7 +227,7 @@ export const questions = defineQuestions([
 			"You'd have no idea I was about to use my ultimate move."
 		],
 		choices: ['For real!?', "That's worrying...", '...Try me.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'good', 'ok', 'ok']
@@ -243,7 +243,7 @@ export const questions = defineQuestions([
 			"That's wack, man. Maybe you should get your head checked out."
 		],
 		choices: ['I probably should.', 'No way.', "I'm going feral!"],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'ok', 'good'],
 			['ok', 'good', 'ok', 'bad'],
 			['ok', 'bad', 'good', 'ok']
@@ -259,7 +259,7 @@ export const questions = defineQuestions([
 			"Just thinkin' about hierarchy... you should be showin' me a little more respect, shouldn't you?"
 		],
 		choices: ["You're right, Senpai.", 'I never thought about it.', 'I prefer mutual respect.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'bad', 'ok'],
 			['bad', 'ok', 'ok', 'ok'],
 			['ok', 'good', 'good', 'good']
@@ -275,7 +275,7 @@ export const questions = defineQuestions([
 			"How 'bout we have an interview? You're the winner, after all. I'll listen to whatever you gotta say."
 		],
 		choices: ['I feel great.', 'I want to aim higher.', 'Fighting is pointless.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'good', 'bad'],
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'bad', 'bad', 'good']
@@ -291,7 +291,7 @@ export const questions = defineQuestions([
 			'Is it just me, or does something stink?'
 		],
 		choices: ["It's just you.", "It's coming from you.", 'I smell a lie.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['ok', 'bad', 'bad', 'bad'],
 			['bad', 'ok', 'good', 'good']
@@ -307,7 +307,7 @@ export const questions = defineQuestions([
 			"What're you gonna tell your kids about this shit?"
 		],
 		choices: ['It was a hard-fought battle.', 'It was an easy win.', "I'll forget it happened."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['bad', 'bad', 'ok', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -320,7 +320,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ["Y'know, that mask is kinda makin' me uneasy...", "What's gonna happen to me?"],
 		choices: ["I'll make mincemeat of you.", "I'll play nice.", "I'll be your dominatrix."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'good', 'bad'],
 			['good', 'bad', 'ok', 'good'],
 			['bad', 'bad', 'good', 'bad']
@@ -336,7 +336,7 @@ export const questions = defineQuestions([
 			"How 'bout you? You wanna get married someday?"
 		],
 		choices: ['I do.', "I don't.", "That's impossible."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['bad', 'good', 'bad', 'ok'],
 			['ok', 'bad', 'bad', 'good']
@@ -352,7 +352,7 @@ export const questions = defineQuestions([
 			"I'm sure a miracle's gonna happen to me, right?"
 		],
 		choices: ["Miracles don't exist.", "I'd be jealous if it did.", "I'm waiting."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['good', 'bad', 'ok', 'good'],
 			['good', 'bad', 'good', 'bad']
@@ -368,7 +368,7 @@ export const questions = defineQuestions([
 			"Life's nothing but pain anyways. Just do whatever you want."
 		],
 		choices: ['Like what?', "I'll kill you slowly.", "Let's live together."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'bad', 'bad', 'good'],
 			['ok', 'good', 'bad', 'bad'],
 			['good', 'ok', 'good', 'bad']
@@ -384,7 +384,7 @@ export const questions = defineQuestions([
 			'Who the blazes do you think you are?'
 		],
 		choices: ['I feel bad about that.', "I'm ME!", "I don't owe you an answer."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'bad', 'good', 'bad'],
 			['ok', 'good', 'bad', 'good']
@@ -400,7 +400,7 @@ export const questions = defineQuestions([
 			"...It's fine. Do as you please."
 		],
 		choices: ['I need your help.', 'Lick my boots.', "Are you sure it's fine?"],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'bad'],
 			['bad', 'good', 'good', 'ok'],
 			['ok', 'bad', 'good', 'good']
@@ -416,7 +416,7 @@ export const questions = defineQuestions([
 			"If so, then won't you overlook this? Let's make a deal..."
 		],
 		choices: ['All right.', 'A deal with the enemy?', "I can't trust you."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'bad', 'good', 'good'],
 			['ok', 'bad', 'ok', 'good']
@@ -432,7 +432,7 @@ export const questions = defineQuestions([
 			'But what if I ripped your body apart? ...What color blood would come pouring out?'
 		],
 		choices: ['Red.', 'Green.', "I don't bleed or cry."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['bad', 'ok', 'good', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -448,7 +448,7 @@ export const questions = defineQuestions([
 			"What if I was a human? Then, what you're doing... well, it'd be a criminal act!"
 		],
 		choices: ["That's true...", "That can't be true.", "That's irrelevant."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -464,7 +464,7 @@ export const questions = defineQuestions([
 			"Had I known things would turn out like this, I'd wish I had found the courage to ask that girl out..."
 		],
 		choices: ["It's not too late.", 'You never had a chance.', "I'll make sure she's happy."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['bad', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'good', 'ok']
@@ -480,7 +480,7 @@ export const questions = defineQuestions([
 			"Ah, it's a shame. If I'd taken this seriously from the start, I wouldn't be in this sorry state."
 		],
 		choices: ['Then get serious now.', 'Making excuses?', "I wasn't trying either."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'bad'],
 			['bad', 'good', 'good', 'bad'],
 			['good', 'ok', 'good', 'good']
@@ -496,7 +496,7 @@ export const questions = defineQuestions([
 			"I'm not the one you should want to shoot..."
 		],
 		choices: ["You've got a point there.", 'Not necessarily.', 'Anyone will do.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'good', 'ok', 'bad'],
 			['bad', 'bad', 'ok', 'good']
@@ -512,7 +512,7 @@ export const questions = defineQuestions([
 			"The truth is... you're a good person, aren't you?"
 		],
 		choices: ['I get that a lot.', "Actually... I'm bad.", 'Are you mocking me?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'good', 'bad'],
 			['ok', 'ok', 'ok', 'good']
@@ -528,7 +528,7 @@ export const questions = defineQuestions([
 			"It's clich姻d, but we could talk about life... Ask each other things like what sort of girls we're into..."
 		],
 		choices: ['I like older women.', 'No preference.', 'I like men.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'ok']
@@ -544,7 +544,7 @@ export const questions = defineQuestions([
 			"As far as you're concerned, what kind of person was I to you?"
 		],
 		choices: ['My rival.', 'Nobody, really.', "It doesn't matter."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'bad', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -560,7 +560,7 @@ export const questions = defineQuestions([
 			'What was... the cause of my defeat?'
 		],
 		choices: ['Your lack of resolve.', 'Just bad luck.', "I'm not telling."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -576,7 +576,7 @@ export const questions = defineQuestions([
 			'What has brought you to a place like this? What are you seeking?'
 		],
 		choices: ['An adventure.', 'Nothing, really.', 'A killing spree.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'bad', 'ok', 'good'],
 			['bad', 'ok', 'good', 'ok']
@@ -592,7 +592,7 @@ export const questions = defineQuestions([
 			'I would never have accepted this task if I knew it would involve this sort of suffering.'
 		],
 		choices: ["That's a pity...", 'Uninformed choices are bad.', "Complaining won't help."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'good', 'good', 'good'],
 			['ok', 'bad', 'ok', 'good']
@@ -608,7 +608,7 @@ export const questions = defineQuestions([
 			"You didn't stray from the path or get lost?"
 		],
 		choices: ['I downloaded an app.', 'Well, I got a little lost.', "I don't remember."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'bad', 'good', 'ok'],
 			['bad', 'bad', 'ok', 'good']
@@ -624,7 +624,7 @@ export const questions = defineQuestions([
 			"I mean, how does it feel to wave your gun at an enemy who's completely lost the will to fight?"
 		],
 		choices: ["It's not bad.", 'I could get used to it.', 'It pains my heart.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'ok'],
 			['good', 'bad', 'ok', 'ok']
@@ -640,7 +640,7 @@ export const questions = defineQuestions([
 			"I don't hate you. No, I don't feel that way at all..."
 		],
 		choices: ['Is that so?', 'Too late.', "Then let's hold hands."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'good'],
 			['bad', 'good', 'ok', 'bad'],
 			['good', 'bad', 'good', 'bad']
@@ -656,7 +656,7 @@ export const questions = defineQuestions([
 			"Did I just see your hand shaking? Isn't your guilt tormenting you?"
 		],
 		choices: ["It's just a chill.", "Yeah, I can't take it...", 'Shut up.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'bad'],
 			['good', 'good', 'good', 'ok'],
 			['bad', 'bad', 'bad', 'good']
@@ -672,7 +672,7 @@ export const questions = defineQuestions([
 			"Doesn't what you're doing bother your conscience?"
 		],
 		choices: ['Now that you mention it...', 'Nope.', "What's a conscience?"],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['bad', 'good', 'bad', 'ok'],
 			['bad', 'ok', 'good', 'good']
@@ -692,7 +692,7 @@ export const questions = defineQuestions([
 			"Don't play the victim.",
 			'Nothing in particular.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'good', 'ok'],
 			['good', 'ok', 'ok', 'bad'],
 			['bad', 'bad', 'bad', 'good']
@@ -708,7 +708,7 @@ export const questions = defineQuestions([
 			"I'm well-connected, okay? I know some people that are pretty complicated."
 		],
 		choices: ['I want to meet them.', 'Complicated...?', 'Liar.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'ok', 'bad', 'good'],
 			['bad', 'bad', 'bad', 'good']
@@ -724,7 +724,7 @@ export const questions = defineQuestions([
 			"You do realize it's useless to go waving that thing around aimlessly."
 		],
 		choices: ['I know.', "Don't act so tough.", 'Not as useless as you.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'bad', 'ok'],
 			['bad', 'bad', 'good', 'good']
@@ -740,7 +740,7 @@ export const questions = defineQuestions([
 			"If your parents could see you now, I'm sure it would break their hearts..."
 		],
 		choices: ['You might be right...', "This doesn't involve them.", "Actually, they'd rejoice."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'ok', 'bad', 'good'],
 			['bad', 'bad', 'good', 'bad']
@@ -756,7 +756,7 @@ export const questions = defineQuestions([
 			"And if that's the case, why don't you just stop this futile endeavor? It's meaningless..."
 		],
 		choices: ['You have a point there...', "I can't stop.", "I'll find meaning in it."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -772,7 +772,7 @@ export const questions = defineQuestions([
 			'Do you seek friendly competition with a beloved neighbor? Or have you come to destroy a hated foe?'
 		],
 		choices: ["You're a beloved neighbor.", "You're a loathsome foe.", 'You sound preachy.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['bad', 'good', 'good', 'ok'],
 			['ok', 'bad', 'good', 'good']
@@ -785,7 +785,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['...You have already committed a grave sin.', 'Do you know what I speak of?'],
 		choices: ['Sin...?', 'Please tell me.', "I've done nothing wrong."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['good', 'ok', 'good', 'good'],
 			['ok', 'good', 'bad', 'ok']
@@ -801,7 +801,7 @@ export const questions = defineQuestions([
 			'It is to become aware of the gaze of our Father, who watches over you with loving grace.'
 		],
 		choices: ["I don't understand.", 'I feel his gaze.', 'I prefer a harsher stare.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'ok', 'ok', 'good'],
 			['good', 'ok', 'good', 'bad'],
 			['good', 'good', 'good', 'ok']
@@ -817,7 +817,7 @@ export const questions = defineQuestions([
 			'Vow that you will use that power in the name of our Father.'
 		],
 		choices: ["I'll think about it.", 'No need to be so dramatic.', 'I decline.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['bad', 'ok', 'good', 'good'],
 			['bad', 'good', 'ok', 'ok']
@@ -833,7 +833,7 @@ export const questions = defineQuestions([
 			'...Very well. In the place of our Father, I shall listen to your complaints.'
 		],
 		choices: ["Why can't we end war?", 'No complaints here.', "I can't get a girlfriend."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['good', 'ok', 'bad', 'good'],
 			['ok', 'bad', 'good', 'ok']
@@ -849,7 +849,7 @@ export const questions = defineQuestions([
 			'Therefore, I cannot be destroyed. Desist from this pointlessness.'
 		],
 		choices: ['What are you talking about?', "That's absurd.", 'Then I shall desist.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'good'],
 			['bad', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'bad']
@@ -865,7 +865,7 @@ export const questions = defineQuestions([
 			'Let me hear you utter words of repentance.'
 		],
 		choices: ['Sorry.', '"Words of repentance."', 'Not sorry.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'bad', 'good', 'good'],
 			['bad', 'good', 'ok', 'bad']
@@ -881,7 +881,7 @@ export const questions = defineQuestions([
 			"To view me as an enemy is to incur our Father's wrath. Man's future rests in your hands."
 		],
 		choices: ['Leave the future to me.', 'I need your guidance.', "I don't get it."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'bad', 'good', 'ok'],
 			['good', 'good', 'good', 'bad'],
 			['bad', 'ok', 'ok', 'good']
@@ -897,7 +897,7 @@ export const questions = defineQuestions([
 			'Can you sacrifice yourself in order to demonstrate your veneration of our Father?'
 		],
 		choices: ['I can certainly try.', 'No can do.', "What's veneration?"],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -913,7 +913,7 @@ export const questions = defineQuestions([
 			'You, who reside in that world of the almighty, what is it that has beleaguered you so?'
 		],
 		choices: ['Omnipotent?', "I'm not beleaguered.", "There's someone I want to save."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'bad', 'good', 'good'],
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'good', 'good', 'ok']
@@ -929,7 +929,7 @@ export const questions = defineQuestions([
 			'Think carefully. I am not the one you should detest.'
 		],
 		choices: ["You're right...", "That's absurd.", "I'll be the judge of that."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -945,7 +945,7 @@ export const questions = defineQuestions([
 			'I fear neither death, nor you.'
 		],
 		choices: ['In your situation?', "You're tough.", "Don't push yourself."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['good', 'good', 'good', 'ok'],
 			['good', 'ok', 'ok', 'ok']
@@ -961,7 +961,7 @@ export const questions = defineQuestions([
 			"Out of respect for our Father, let us take a moment's respite..."
 		],
 		choices: ["If that's what you want.", 'What are you telling me?', "I'm a minor."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'ok', 'good'],
 			['ok', 'good', 'good', 'good']
@@ -977,7 +977,7 @@ export const questions = defineQuestions([
 			'...The least I can do is extend this small mercy. Name a calamity that you can bear.'
 		],
 		choices: ['Make it crowded where I shop.', 'Give me violence.', 'No calamities, please.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'ok', 'ok', 'good']
@@ -993,7 +993,7 @@ export const questions = defineQuestions([
 			'That power, it originates from our Father. Thus, is it not reasonable to repay him for the favor?'
 		],
 		choices: ['I never considered it.', 'This power is all mine.', "I don't know."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -1009,7 +1009,7 @@ export const questions = defineQuestions([
 			'That is to say, we are brothers. There is no reason for us to fight.'
 		],
 		choices: ['Leave my parents out of this.', 'You may be right.', "But you're a Shadow."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'ok', 'good', 'good']
@@ -1025,7 +1025,7 @@ export const questions = defineQuestions([
 			'You have appeared to test my adoration of our Father. Yes, you are... the Tempter!'
 		],
 		choices: ['You got me.', "You're mistaken.", 'Are you okay?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['ok', 'good', 'bad', 'bad'],
 			['good', 'bad', 'good', 'good']
@@ -1041,7 +1041,7 @@ export const questions = defineQuestions([
 			'What do you hope to accomplish by injuring me further...?'
 		],
 		choices: ['More sleep.', 'Treasure.', "Once I start, I can't stop."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'bad'],
 			['good', 'good', 'bad', 'bad'],
 			['ok', 'ok', 'bad', 'good']
@@ -1057,7 +1057,7 @@ export const questions = defineQuestions([
 			'For you to force me to prostrate myself, as one who only seeks your well-being... Is there anything more irrational?'
 		],
 		choices: ['My apologies.', "I don't want salvation.", 'Shut up.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'bad'],
 			['bad', 'bad', 'ok', 'good']
@@ -1073,7 +1073,7 @@ export const questions = defineQuestions([
 			'Do you... think me a charlatan?'
 		],
 		choices: ["I don't think that.", 'I think of you as a foe.', "You're not one?"],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['bad', 'good', 'ok', 'good'],
 			['bad', 'bad', 'good', 'good']
@@ -1089,7 +1089,7 @@ export const questions = defineQuestions([
 			'It seems the Sons of Man have denounced the word of our Father. Tell me, what worth have you found?'
 		],
 		choices: ['We have love.', 'I can survive alone.', 'Find it for me.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'good', 'good', 'ok'],
 			['good', 'bad', 'bad', 'good']
@@ -1105,7 +1105,7 @@ export const questions = defineQuestions([
 			'You have thrown this place into upheaval. What would you think if I did the same to your world?'
 		],
 		choices: ["I wouldn't allow it.", "I hadn't thought of that.", 'An eye for an eye.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'bad'],
 			['good', 'bad', 'bad', 'good'],
 			['bad', 'bad', 'good', 'bad']
@@ -1121,7 +1121,7 @@ export const questions = defineQuestions([
 			'Is it not a breeding ground for impudent humans? How do you view this world of yours?'
 		],
 		choices: ['Full of corrupt adults.', 'Plenty of places to shop.', 'Looks normal to me.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'bad'],
 			['bad', 'bad', 'good', 'bad'],
 			['good', 'bad', 'bad', 'good']
@@ -1137,7 +1137,7 @@ export const questions = defineQuestions([
 			'To destroy me is to keep this happiness from Man. You are wise. You understand this, do you not?'
 		],
 		choices: ['That would be bad.', 'What are you trying to say?', "I'm happy enough."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'bad', 'good'],
 			['bad', 'bad', 'good', 'bad']
@@ -1153,7 +1153,7 @@ export const questions = defineQuestions([
 			"Somethin' bad happen in yer life or somethin', sonny?"
 		],
 		choices: ["It's not like that.", 'I got bad luck.', 'Shut up.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -1169,7 +1169,7 @@ export const questions = defineQuestions([
 			'If yer gonna kill me, do me a solid and make it quick.'
 		],
 		choices: ["Aren't you scared?", "I'll have some more fun first.", "I won't make you suffer."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'good'],
 			['bad', 'good', 'good', 'bad'],
 			['good', 'ok', 'ok', 'good']
@@ -1185,7 +1185,7 @@ export const questions = defineQuestions([
 			"Couldn't ya at least make me a cup of tea or somethin'? Hell, that'd be real polite."
 		],
 		choices: ['So sorry.', 'Brew your own.', "I'm not known for being polite."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'ok'],
 			['bad', 'good', 'good', 'ok'],
 			['bad', 'good', 'bad', 'good']
@@ -1201,7 +1201,7 @@ export const questions = defineQuestions([
 			'...I gotta ask. How do you work out?'
 		],
 		choices: ["I don't really train.", 'I just have a knack for it.', 'At a gym from hell.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'good'],
 			['good', 'ok', 'bad', 'ok'],
 			['ok', 'ok', 'good', 'ok']
@@ -1217,7 +1217,7 @@ export const questions = defineQuestions([
 			"Hey. Why aren't ya at school?"
 		],
 		choices: ["It's after school.", "I don't feel like going.", 'I actually finished school.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'good'],
 			['ok', 'bad', 'good', 'ok']
@@ -1233,7 +1233,7 @@ export const questions = defineQuestions([
 			"A bad rep spreads like wildfire. If I were you, I'd quit all this nonsense. What's the point?"
 		],
 		choices: ["You're right.", "I don't care.", "I don't know any other way."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good'],
 			['bad', 'bad', 'good', 'good']
@@ -1249,7 +1249,7 @@ export const questions = defineQuestions([
 			"...Y'know what I'm gettin' at, right? Ya think ya could let me go see my girl?"
 		],
 		choices: ['Nope.', "I'll consider it.", 'What kind of girl is she?'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'ok'],
 			['good', 'bad', 'good', 'bad'],
 			['ok', 'ok', 'good', 'good']
@@ -1265,7 +1265,7 @@ export const questions = defineQuestions([
 			"Are all the kids these days doin' stuff like this?"
 		],
 		choices: ['Yeah, we sure are.', 'No, I thought this up myself.', 'Want to join in?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['ok', 'good', 'good', 'ok'],
 			['good', 'bad', 'good', 'ok']
@@ -1281,7 +1281,7 @@ export const questions = defineQuestions([
 			"What in the hell are ya tryin' ta tell me, anyway?"
 		],
 		choices: ["You're going to die.", 'Why do we fight?', "I don't really know."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'good'],
 			['good', 'good', 'good', 'good'],
 			['ok', 'ok', 'ok', 'good']
@@ -1297,7 +1297,7 @@ export const questions = defineQuestions([
 			"If you ask me, it's a lot more fun ta go chasin' after younger ladies, but..."
 		],
 		choices: ['This is true.', "That's not very fun.", 'You dirty old man.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -1313,7 +1313,7 @@ export const questions = defineQuestions([
 			'Hey. So whaddya feel when you think about the future?'
 		],
 		choices: ['An average level of happiness.', 'Live fast, die young.', 'Nothing.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['good', 'good', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -1329,7 +1329,7 @@ export const questions = defineQuestions([
 			'What do ya usually eat?'
 		],
 		choices: ['Curry.', 'All sorts of things.', 'Protein.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'ok']
@@ -1345,7 +1345,7 @@ export const questions = defineQuestions([
 			"What's wrong with the way I look, huh?"
 		],
 		choices: ['You tempt people.', "You're ugly.", "Nothing's wrong."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['ok', 'good', 'ok', 'good'],
 			['good', 'good', 'bad', 'good']
@@ -1365,7 +1365,7 @@ export const questions = defineQuestions([
 			'I prefer being an adult.',
 			'I wish I was still a baby.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'bad'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'ok']
@@ -1381,7 +1381,7 @@ export const questions = defineQuestions([
 			'What kinda "fate" do ya think there is in this meetin\' between me and you?'
 		],
 		choices: ['Fate brought us together.', 'There is no such thing.', 'I want to end this fate.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['bad', 'bad', 'good', 'bad']
@@ -1397,7 +1397,7 @@ export const questions = defineQuestions([
 			"Y'know, if I'm gonna be killed, I'd rather be offed by a beautiful, classy lady."
 		],
 		choices: ['Sorry.', "You don't get to be picky.", "It's all the same."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -1413,7 +1413,7 @@ export const questions = defineQuestions([
 			'Hey, if ya got any medicine, lend me some. One of them painkillers...'
 		],
 		choices: ['Are you okay?', 'I have some antacids.', "That won't change anything."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'ok', 'good'],
 			['ok', 'ok', 'good', 'bad'],
 			['ok', 'good', 'ok', 'good']
@@ -1429,7 +1429,7 @@ export const questions = defineQuestions([
 			'Know how they say, "Be kind ta yer elders"? Has no one ever taught ya that?'
 		],
 		choices: ['Someone did once.', "I don't care.", "I don't want to grow old."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'good', 'bad', 'good'],
 			['bad', 'ok', 'good', 'good']
@@ -1445,7 +1445,7 @@ export const questions = defineQuestions([
 			"How 'bout you, sonny? What kinda trip do you wanna take?"
 		],
 		choices: ['A luxury cruise.', "Don't want to go anywhere.", 'A trip to hell.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['bad', 'good', 'bad', 'good'],
 			['bad', 'bad', 'good', 'ok']
@@ -1461,7 +1461,7 @@ export const questions = defineQuestions([
 			"Hey, sonny, if somethin's been botherin' you, I'm willin' ta give you a listen."
 		],
 		choices: ['My relationships.', 'I smell sweaty.', 'I have no worries.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['bad', 'bad', 'good', 'ok'],
 			['ok', 'bad', 'ok', 'good']
@@ -1477,7 +1477,7 @@ export const questions = defineQuestions([
 			"Humans talk over drinks, right? How 'bout it? Hell, let me buy ya a round, sonny."
 		],
 		choices: ['Quit messing around.', "You're really paying?", "I'm a minor."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good']
@@ -1493,7 +1493,7 @@ export const questions = defineQuestions([
 			"Man, I'm about ta be a victim of that too. Hell, does this country even have a future?"
 		],
 		choices: ['It does.', "Don't expect it.", 'The elderly have bad manners.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'bad', 'ok'],
 			['bad', 'bad', 'good', 'good']
@@ -1509,7 +1509,7 @@ export const questions = defineQuestions([
 			"In the end, killin' me's just a waste of yer time and energy. You get what I'm sayin', right?"
 		],
 		choices: ['When you put it that way...', "It's not a waste.", 'Are you on a loop?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'ok'],
 			['ok', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -1529,7 +1529,7 @@ export const questions = defineQuestions([
 			'A coupon for a massage by me.',
 			"I'll be at your side until the end."
 		],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'good', 'bad'],
 			['good', 'bad', 'bad', 'good']
@@ -1545,7 +1545,7 @@ export const questions = defineQuestions([
 			"If that's the plan, well, you better make sure I'm satisfied."
 		],
 		choices: ["Don't toy with me.", "You're not making sense.", 'What would you like?'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'ok'],
 			['ok', 'ok', 'ok', 'good'],
 			['good', 'bad', 'good', 'good']
@@ -1561,7 +1561,7 @@ export const questions = defineQuestions([
 			"You know, if you're willing to let this go... I'll make it worth your while."
 		],
 		choices: ['Worth my while?', 'No, thanks.', 'I already get enough, actually.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'good', 'good', 'bad']
@@ -1577,7 +1577,7 @@ export const questions = defineQuestions([
 			"So? What's going to happen to me now?"
 		],
 		choices: ["You'll be killed.", 'What do you want to happen?', "It's a secret."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'bad'],
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -1593,7 +1593,7 @@ export const questions = defineQuestions([
 			'You know, if I were to whip something up for you, what would you want?'
 		],
 		choices: ['Meat and potatoes.', "I don't need homemade food.", 'Can you actually cook?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'bad', 'bad', 'good']
@@ -1609,7 +1609,7 @@ export const questions = defineQuestions([
 			"It's true, isn't it?"
 		],
 		choices: ["It's not true.", 'Maybe.', 'Cougars are all the rage now.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['ok', 'bad', 'bad', 'good'],
 			['ok', 'ok', 'good', 'ok']
@@ -1629,7 +1629,7 @@ export const questions = defineQuestions([
 			'A busy ramen joint.',
 			'Where would you like to go?'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'bad', 'bad', 'good']
@@ -1645,7 +1645,7 @@ export const questions = defineQuestions([
 			'So... You enjoy teasing older women like this?'
 		],
 		choices: ["That wasn't my intention.", 'It is fun, actually.', "I'm being serious."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['bad', 'bad', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -1661,7 +1661,7 @@ export const questions = defineQuestions([
 			"Wouldn't your girlfriend get jealous if she could see us?"
 		],
 		choices: ['No need to worry.', "It's only bad if we get caught.", "I don't have a girlfriend."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good']
@@ -1677,7 +1677,7 @@ export const questions = defineQuestions([
 			'I lost. Here I lay, at your feet, at your mercy. Just what do you want from me?'
 		],
 		choices: ['Give me something.', 'Grovel before me.', "I don't know."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'ok', 'ok', 'good']
@@ -1693,7 +1693,7 @@ export const questions = defineQuestions([
 			'The way you treat me, though, is giving me mixed messages. How do you really feel about me?'
 		],
 		choices: ["You're beautiful.", "You're scary.", 'Nothing in particular.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -1713,7 +1713,7 @@ export const questions = defineQuestions([
 			"We'd have gotten married.",
 			"Nothing would've changed."
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -1729,7 +1729,7 @@ export const questions = defineQuestions([
 			'Well, I need to see myself home soon...'
 		],
 		choices: ['Go home then.', 'What do you mean?', "Let's go home together."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'ok', 'good'],
 			['good', 'ok', 'good', 'good']
@@ -1745,7 +1745,7 @@ export const questions = defineQuestions([
 			'If your girlfriend asked if you were free to have dinner with "everybody," what would you say?'
 		],
 		choices: ['Sure.', "I'm busy.", 'What are you talking about?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['ok', 'good', 'ok', 'bad'],
 			['good', 'bad', 'ok', 'good']
@@ -1761,7 +1761,7 @@ export const questions = defineQuestions([
 			'I wanted to go on vacation, too, before all this happened...'
 		],
 		choices: ["That's too bad.", 'What are you getting at?', 'You have a boyfriend?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['ok', 'ok', 'good', 'good'],
 			['ok', 'bad', 'good', 'ok']
@@ -1777,7 +1777,7 @@ export const questions = defineQuestions([
 			"Do you have a dish you're good at?"
 		],
 		choices: ['Fried rice.', 'Mystery meat.', 'What are you saying?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'bad'],
 			['ok', 'ok', 'bad', 'good']
@@ -1797,7 +1797,7 @@ export const questions = defineQuestions([
 			"I've totally got girl power.",
 			'Figure it out yourself.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good']
@@ -1813,7 +1813,7 @@ export const questions = defineQuestions([
 			'What do you think about humans showing pictures of their baby to others?'
 		],
 		choices: ["It's cute.", "I'm not interested.", 'What are you talking about?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good'],
 			['good', 'ok', 'bad', 'good']
@@ -1833,7 +1833,7 @@ export const questions = defineQuestions([
 			'Next to a convenience store.',
 			'What are you talking about?'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'bad', 'bad'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'ok', 'bad', 'good']
@@ -1849,7 +1849,7 @@ export const questions = defineQuestions([
 			"I've heard that love can bloom anywhere, even on a battlefield. Don't you think that's possible?"
 		],
 		choices: ['Can it?', 'Not a chance.', 'What are you saying?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'ok'],
 			['good', 'bad', 'ok', 'good']
@@ -1865,7 +1865,7 @@ export const questions = defineQuestions([
 			"I wonder if it's about time I quit this job."
 		],
 		choices: ['Hang in there.', "That's a good idea.", 'And then what?'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'bad'],
 			['good', 'ok', 'ok', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -1881,7 +1881,7 @@ export const questions = defineQuestions([
 			'Could this be what you humans call a proposal...?'
 		],
 		choices: ["I'm surprised you knew.", "No, it's not.", "That's a myth."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['ok', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -1897,7 +1897,7 @@ export const questions = defineQuestions([
 			"Today, I have what you humans call a girl's night out."
 		],
 		choices: ['Quit messing with me.', 'Should I go instead?', 'Girls...?'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -1913,7 +1913,7 @@ export const questions = defineQuestions([
 			"So... I'm sorry, but can I go and fix my bangs first?"
 		],
 		choices: ['Quit joking around.', "You're fine as you are.", "That's pointless."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'ok', 'bad', 'good']
@@ -1929,7 +1929,7 @@ export const questions = defineQuestions([
 			"I was going to catch a great guy, live a life of celebrity... Where'd it all go wrong?"
 		],
 		choices: ['You did nothing wrong.', 'You dreamed too big.', "It's your personality."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'good', 'bad'],
 			['bad', 'bad', 'bad', 'good']
@@ -1945,7 +1945,7 @@ export const questions = defineQuestions([
 			'Care to explain yourself? I certainly hope you have a good reason for this boorish treatment.'
 		],
 		choices: ['That would take a while.', "There's no need to explain.", 'Just shut up...'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'good'],
 			['bad', 'ok', 'ok', 'good'],
 			['bad', 'good', 'ok', 'good']
@@ -1961,7 +1961,7 @@ export const questions = defineQuestions([
 			'I insist you surrender yourself to the authorities.'
 		],
 		choices: ['This is a misunderstanding.', 'I apologize.', "You've got the wrong idea."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['good', 'bad', 'ok', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -1977,7 +1977,7 @@ export const questions = defineQuestions([
 			'I\'ve been projecting a "don\'t speak to me" aura towards you.'
 		],
 		choices: ['I noticed.', 'I didn\'t feel an "aura."', 'But we may never meet again.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -1993,7 +1993,7 @@ export const questions = defineQuestions([
 			'I am inclined to turn you down, but if you still wish to speak, I will perhaps consider it.'
 		],
 		choices: ['You have nothing I want.', 'Do you have time?', "Don't turn me down."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'ok'],
 			['good', 'ok', 'ok', 'bad']
@@ -2009,7 +2009,7 @@ export const questions = defineQuestions([
 			'What is irritating you so much?'
 		],
 		choices: ['Rotten adults.', 'Egotistical women.', "I'm not irritated."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'ok'],
 			['good', 'bad', 'good', 'ok'],
 			['good', 'ok', 'ok', 'good']
@@ -2025,7 +2025,7 @@ export const questions = defineQuestions([
 			"Won't you just leave me be?"
 		],
 		choices: ['Fine, I will.', "I can't just leave you.", 'Is that reverse psychology?'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'bad'],
 			['good', 'bad', 'good', 'good']
@@ -2041,7 +2041,7 @@ export const questions = defineQuestions([
 			'You will receive punishment for treating me this way, mark my words.'
 		],
 		choices: ["I'm sorry.", "I'm prepared for the worst.", 'How much do you want?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['bad', 'good', 'good', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -2057,7 +2057,7 @@ export const questions = defineQuestions([
 			"Would you do to anyone else what you're doing to me now?"
 		],
 		choices: ['I sure would.', "No, I wouldn't.", 'This is a special exception.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'bad'],
 			['good', 'good', 'bad', 'good'],
 			['ok', 'bad', 'good', 'good']
@@ -2073,7 +2073,7 @@ export const questions = defineQuestions([
 			'Is it not possible for this series of events involving you and me to be attributed to that?'
 		],
 		choices: ['Fair enough.', 'That is incorrect.', 'What are you talking about?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -2089,7 +2089,7 @@ export const questions = defineQuestions([
 			"Ah, so I suppose you commit such extreme acts because you know you won't be punished harshly..."
 		],
 		choices: ["I'm sorry.", "Age doesn't matter.", "This isn't extreme."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -2105,7 +2105,7 @@ export const questions = defineQuestions([
 			'Is there really any benefit for me if I joined with you?'
 		],
 		choices: ['I think there is.', "I can't promise that.", "It's a matter of feeling."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -2121,7 +2121,7 @@ export const questions = defineQuestions([
 			"Don't you think expecting your would-be victim to be receptive to your words is unreasonable?"
 		],
 		choices: ['I do.', "I don't.", "Don't worry about it."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'good']
@@ -2137,7 +2137,7 @@ export const questions = defineQuestions([
 			"But this way of life in this world is all I've ever known."
 		],
 		choices: ["It's not meaningless.", 'There are other ways to live.', 'You had a good run.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'good'],
 			['good', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -2153,7 +2153,7 @@ export const questions = defineQuestions([
 			'Why have you decided to be more communicative with me?'
 		],
 		choices: ['Your looks.', 'You seemed useful.', 'No particular reason.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'good', 'good', 'ok'],
 			['ok', 'bad', 'bad', 'good']
@@ -2169,7 +2169,7 @@ export const questions = defineQuestions([
 			'I wonder if us speaking together like this now means that we are somehow connected...'
 		],
 		choices: ['It could be.', 'No way.', "It's fate."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['bad', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -2185,7 +2185,7 @@ export const questions = defineQuestions([
 			'I suppose this "real world" where you come from must be fairly boring.'
 		],
 		choices: ["You're right.", 'It keeps me busy.', "It's better than here."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok'],
 			['bad', 'ok', 'good', 'good']
@@ -2201,7 +2201,7 @@ export const questions = defineQuestions([
 			'You do understand that we are here because of people like you, right?'
 		],
 		choices: ['I never thought of that.', 'I understand.', 'What do you mean?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'good'],
 			['bad', 'ok', 'bad', 'good'],
 			['ok', 'ok', 'bad', 'good']
@@ -2217,7 +2217,7 @@ export const questions = defineQuestions([
 			'You, however, are talking to me right here. Are you the exception to this rule?'
 		],
 		choices: ["I'm not special.", "That's right.", 'I have ulterior motives.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'ok', 'good'],
 			['bad', 'good', 'bad', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -2233,7 +2233,7 @@ export const questions = defineQuestions([
 			'I also have loved ones who would miss me. You do catch my meaning, yes?'
 		],
 		choices: ['I do now.', "That doesn't matter.", "I'm always alone."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'bad'],
 			['bad', 'good', 'ok', 'good'],
 			['bad', 'bad', 'good', 'good']
@@ -2249,7 +2249,7 @@ export const questions = defineQuestions([
 			'But is it fair to my kind if only I find such happiness, leaving them all behind?'
 		],
 		choices: ['I think so.', 'They can all come.', 'Your kind?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'ok', 'good', 'bad'],
 			['bad', 'bad', 'ok', 'good']
@@ -2269,7 +2269,7 @@ export const questions = defineQuestions([
 			'Sharing household chores.',
 			'Splitting all the costs.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'bad', 'good'],
 			['good', 'ok', 'ok', 'good'],
 			['bad', 'ok', 'good', 'good']
@@ -2285,7 +2285,7 @@ export const questions = defineQuestions([
 			'I occasionally wish to pamper myself as a reward for working hard. How would you do that?'
 		],
 		choices: ['Relax at home.', 'Go impulse shopping.', "Don't be so selfish."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['ok', 'ok', 'good', 'bad'],
 			['bad', 'good', 'bad', 'good']
@@ -2301,7 +2301,7 @@ export const questions = defineQuestions([
 			"After all, is it not pitiable when one denies one's own feelings?"
 		],
 		choices: ["It's a difficult topic.", "So don't deny them.", "It's mature to admit defeat."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'bad', 'bad', 'good'],
 			['good', 'bad', 'bad', 'bad'],
 			['ok', 'good', 'good', 'bad']
@@ -2317,7 +2317,7 @@ export const questions = defineQuestions([
 			'Even with that in mind, do you still want me?'
 		],
 		choices: ["That's right.", "I didn't think that far...", 'The feelings will come.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['bad', 'ok', 'bad', 'good'],
 			['bad', 'bad', 'good', 'ok']
@@ -2330,7 +2330,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['Hey! That really hurt!', "Ooh, what if this leaves a scar and it's permanent?"],
 		choices: ['Sorry...', 'Just get plastic surgery.', "I'll take responsibility."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'good'],
 			['bad', 'ok', 'good', 'good'],
 			['good', 'good', 'good', 'good']
@@ -2346,7 +2346,7 @@ export const questions = defineQuestions([
 			"You carry a gun because you think it'll make you more popular with the girls?"
 		],
 		choices: ["That's right.", "It won't?", "It's for self-improvement."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'bad'],
 			['good', 'bad', 'good', 'good'],
 			['good', 'good', 'good', 'good']
@@ -2362,7 +2362,7 @@ export const questions = defineQuestions([
 			"...Maybe I'll call the police. Maybe I'll tell 'em that you were worse than you actually were!"
 		],
 		choices: ['Call them. I dare you.', 'Forgive me.', 'It was self-defense.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'bad'],
 			['good', 'bad', 'good', 'good'],
 			['bad', 'good', 'ok', 'ok']
@@ -2378,7 +2378,7 @@ export const questions = defineQuestions([
 			"Hey, how about this? If you don't shoot me, then I'll kiss you. Not a bad deal, right?"
 		],
 		choices: ['Not a bad idea.', "I don't want a kiss.", 'Have some self-respect.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'bad'],
 			['good', 'good', 'bad', 'good']
@@ -2394,7 +2394,7 @@ export const questions = defineQuestions([
 			"It's hard to tell under the mask, but... you're actually handsome, aren't you?"
 		],
 		choices: ['How did you know?', 'No, not at all.', 'I look okay, I guess.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'bad'],
 			['good', 'good', 'bad', 'good'],
 			['ok', 'good', 'bad', 'good']
@@ -2410,7 +2410,7 @@ export const questions = defineQuestions([
 			'Is it only for men? Where did you get it?'
 		],
 		choices: ['Do you want it?', 'Internet shopping.', "It's not available for sale."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'ok', 'good'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'bad', 'bad']
@@ -2426,7 +2426,7 @@ export const questions = defineQuestions([
 			"Hey, if I don't die here... What do you think I'll be like in the future?"
 		],
 		choices: ['A fashionable older woman.', "I can't measure that.", 'Living in darkness.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['ok', 'ok', 'ok', 'good'],
 			['bad', 'bad', 'good', 'good']
@@ -2442,7 +2442,7 @@ export const questions = defineQuestions([
 			"I'm sure there're other people in the world who'd irritate you more. C'mon, tell me."
 		],
 		choices: ['Older people trying to look young.', 'No one bothers me.', 'I hate everyone.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'bad'],
 			['good', 'bad', 'bad', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -2458,7 +2458,7 @@ export const questions = defineQuestions([
 			"When it came right down to it, you couldn't do anything to me!"
 		],
 		choices: ['I could.', 'How could you tell?', 'What do you want me to do?'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'good'],
 			['good', 'ok', 'good', 'good']
@@ -2474,7 +2474,7 @@ export const questions = defineQuestions([
 			'My horoscope said I was gonna have "relationship difficulties" today.'
 		],
 		choices: ['Looks like it came true.', "It's just a horoscope.", 'How is your luck in romance?'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'ok'],
 			['good', 'good', 'ok', 'ok'],
 			['good', 'ok', 'good', 'good']
@@ -2487,7 +2487,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ["...Hey. Aren't you hungry?", 'Can we take a break and go eat somewhere?'],
 		choices: ["What're we getting?", 'Yeah.', "Now's not the time."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'good'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok']
@@ -2503,7 +2503,7 @@ export const questions = defineQuestions([
 			'What do you think I should wear? I admit it, I wanna draw some attention to myself.'
 		],
 		choices: ['High school uniform.', 'Kimono.', "Don't wear anything."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -2519,7 +2519,7 @@ export const questions = defineQuestions([
 			"I'll go out with you just for today if there are no strings attached."
 		],
 		choices: ['If it pleases you.', 'No strings attached?', "I've got enough on my plate..."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'ok', 'good', 'good'],
 			['ok', 'good', 'good', 'good']
@@ -2539,7 +2539,7 @@ export const questions = defineQuestions([
 			'You should love your parents.',
 			'Why not come to my place?'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'good'],
 			['bad', 'good', 'good', 'ok'],
 			['good', 'ok', 'good', 'ok']
@@ -2555,7 +2555,7 @@ export const questions = defineQuestions([
 			"We'll just say you win. So can we stop this?"
 		],
 		choices: ['I feel bad.', "I don't agree with this.", 'Everyone wins.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -2571,7 +2571,7 @@ export const questions = defineQuestions([
 			'Do you have a lot of friends? Ever feel like the things they do are annoying?'
 		],
 		choices: ['Sometimes.', 'No.', 'I have no friends.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'good']
@@ -2587,7 +2587,7 @@ export const questions = defineQuestions([
 			"You're lucky it was just me. You can't do anything like this in the real world, right?"
 		],
 		choices: ["That's right.", 'I choose my targets carefully.', "I'm serious about this."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'bad', 'good', 'ok'],
 			['bad', 'good', 'good', 'ok']
@@ -2603,7 +2603,7 @@ export const questions = defineQuestions([
 			"You're hitting on me, right? Don't you think you're totally doing it wrong?"
 		],
 		choices: ['Nothing wrong about it.', "What's the right way, then?", "I'm not hitting on you."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'bad', 'ok', 'good'],
 			['good', 'good', 'bad', 'ok']
@@ -2619,7 +2619,7 @@ export const questions = defineQuestions([
 			"If that's true, then I don't think there's any real point in killing me..."
 		],
 		choices: ["Of course there's a point.", "You're right.", "Then who's the real enemy?"],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'bad', 'ok'],
 			['good', 'good', 'good', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -2635,7 +2635,7 @@ export const questions = defineQuestions([
 			'Hey, is my hair flat? Does it look weird?'
 		],
 		choices: ['It looks cute.', "It's weird-looking.", 'Who cares?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'good', 'ok', 'ok'],
 			['bad', 'good', 'bad', 'good']
@@ -2651,7 +2651,7 @@ export const questions = defineQuestions([
 			'But before you do, do something funny. What can you do?'
 		],
 		choices: ['Impressions.', 'Making funny faces.', 'Nothing.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['good', 'bad', 'good', 'bad'],
 			['bad', 'ok', 'ok', 'good']
@@ -2667,7 +2667,7 @@ export const questions = defineQuestions([
 			"Honestly, aren't I, like, a way better girl than those idols?"
 		],
 		choices: ["You're more unique.", 'Not really...', 'Who cares about idols?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'bad'],
 			['bad', 'good', 'ok', 'bad'],
 			['ok', 'good', 'bad', 'good']
@@ -2683,7 +2683,7 @@ export const questions = defineQuestions([
 			"Is it because I'm not acting mature enough? Like, what the heck makes someone mature, anyway?"
 		],
 		choices: ["When you're an adult.", 'Paying your own rent.', 'Questioning maturity.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'bad'],
 			['good', 'bad', 'good', 'good']
@@ -2703,7 +2703,7 @@ export const questions = defineQuestions([
 			'Just wait a little longer.',
 			"He's right in front of you."
 		],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'good'],
 			['good', 'bad', 'ok', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -2719,7 +2719,7 @@ export const questions = defineQuestions([
 			"You were so sure of yourself, so it's embarrassing now to admit you're struggling here. Right?"
 		],
 		choices: ["That's right.", 'No.', "Don't make fun of me."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -2735,7 +2735,7 @@ export const questions = defineQuestions([
 			'Well, quite frankly... No one wants you here. You do understand that, right?'
 		],
 		choices: ['I know.', "I didn't know that.", 'Who cares?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['ok', 'ok', 'good', 'ok'],
 			['bad', 'bad', 'ok', 'good']
@@ -2751,7 +2751,7 @@ export const questions = defineQuestions([
 			"I suppose that's why I feel so confused, child. After all, why am I being treated like this?"
 		],
 		choices: ['Because you resisted.', "It's for your own good.", "Holidays don't matter."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'bad', 'ok'],
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'good', 'bad', 'good']
@@ -2771,7 +2771,7 @@ export const questions = defineQuestions([
 			"I don't think that'll happen.",
 			'Leave my parents out of this.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['ok', 'good', 'good', 'bad'],
 			['ok', 'good', 'bad', 'good']
@@ -2787,7 +2787,7 @@ export const questions = defineQuestions([
 			'You must be one of those delinquents I hear about. Do you have poor grades in school?'
 		],
 		choices: ["I'm a straight-A student.", "They're not great...", "At least I'm popular."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['good', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'good']
@@ -2803,7 +2803,7 @@ export const questions = defineQuestions([
 			"But I've been around the block, so I know悪 there's something else you want from me, isn't there?"
 		],
 		choices: ['Nope.', 'I just love the elderly.', 'I just want you to die happy.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'bad', 'ok'],
 			['good', 'good', 'good', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -2819,7 +2819,7 @@ export const questions = defineQuestions([
 			'When I was young, I could make anyone back off悪if they were smart enough悪 with just my glare.'
 		],
 		choices: ["That's so neat.", "I'm just that good.", "You've grown old."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good']
@@ -2835,7 +2835,7 @@ export const questions = defineQuestions([
 			"Oh, they're so self-assured that they'll be so successful in the future. Are you like that, child?"
 		],
 		choices: ["That's right.", "That's not true.", "What's wrong with that?"],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['good', 'ok', 'good', 'ok'],
 			['bad', 'bad', 'ok', 'good']
@@ -2851,7 +2851,7 @@ export const questions = defineQuestions([
 			"Why did you come to this dangerous place? Isn't it safer in the real world?"
 		],
 		choices: ["I've got business here.", "I'm here for the loot.", "Just 'cause."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'ok', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -2867,7 +2867,7 @@ export const questions = defineQuestions([
 			"You'll have a bleak future if you spend too much time running around pretending to be a phantom thief."
 		],
 		choices: ['Thank you.', "Don't worry about it.", "It's worth it."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'good']
@@ -2883,7 +2883,7 @@ export const questions = defineQuestions([
 			"Isn't that just like when a human woman gets married and moves in with her husband?"
 		],
 		choices: ["That's right.", 'No.', 'I love someone else.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['good', 'good', 'good', 'ok']
@@ -2903,7 +2903,7 @@ export const questions = defineQuestions([
 			'Scold me every so often.',
 			"You don't have to do anything."
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'bad', 'ok', 'good']
@@ -2919,7 +2919,7 @@ export const questions = defineQuestions([
 			'I guess women are really more social these days, finding so many fun things to do outside the home.'
 		],
 		choices: ["That's so true.", 'Men are social too.', 'Is that so?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -2935,7 +2935,7 @@ export const questions = defineQuestions([
 			"Now, people don't even know who lives next door to them. Shouldn't we know our neighbors better?"
 		],
 		choices: ["It's saddening.", "I don't really think about it.", 'Privacy is important.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good'],
 			['ok', 'ok', 'good', 'ok']
@@ -2951,7 +2951,7 @@ export const questions = defineQuestions([
 			'After confronting me like this... Are you that kind of human too?'
 		],
 		choices: ["That's not my style.", "You've got a point...", "What's wrong with that?"],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'ok'],
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good']
@@ -2967,7 +2967,7 @@ export const questions = defineQuestions([
 			"I wish they would leave us old people alone. After all, it's not like we have much time left."
 		],
 		choices: ['I agree.', 'Speak for yourself.', "There's an aging boom..."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'ok', 'good', 'good'],
 			['bad', 'ok', 'good', 'good']
@@ -2987,7 +2987,7 @@ export const questions = defineQuestions([
 			"They shouldn't push themselves.",
 			'They must be young inside.'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'bad', 'good'],
 			['good', 'good', 'ok', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -3003,7 +3003,7 @@ export const questions = defineQuestions([
 			"I think dying alone isn't so bad, dearie, but isn't living alone in the first place the real tragedy?"
 		],
 		choices: ["I don't think so.", "Maybe you're right.", 'Being alone is a luxury.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'ok'],
 			['good', 'ok', 'bad', 'good'],
 			['bad', 'bad', 'good', 'good']
@@ -3019,7 +3019,7 @@ export const questions = defineQuestions([
 			'They wear sleeveless shirts in the winter, right? What do you think about that, dearie?'
 		],
 		choices: ["It's what's in.", "It's just terrible.", "I couldn't care less."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'bad'],
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'ok', 'ok', 'good']
@@ -3035,7 +3035,7 @@ export const questions = defineQuestions([
 			'You were the first one to show any interest, so I think you should say something to make me happy.'
 		],
 		choices: ['I want your help.', "You're cute.", "Don't be so full of yourself."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['good', 'bad', 'good', 'bad'],
 			['bad', 'good', 'bad', 'good']
@@ -3051,7 +3051,7 @@ export const questions = defineQuestions([
 			"Don't you think it's sad that slang and sayings can grow old and get outdated?"
 		],
 		choices: ['That is sad.', "I don't think so.", "That just proves you're old."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['bad', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -3067,7 +3067,7 @@ export const questions = defineQuestions([
 			"Would you be willing to spend time and money to see people you haven't contacted for years?"
 		],
 		choices: ['I suppose so.', 'Sounds like a drag.', 'No one invites me to reunions.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -3083,7 +3083,7 @@ export const questions = defineQuestions([
 			"Something about people putting honey on cucumbers to feel like they're eating fancy cantaloupe?"
 		],
 		choices: ['I follow those tips.', "It's depressing.", 'Never heard of that.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['good', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'bad', 'good']
@@ -3099,7 +3099,7 @@ export const questions = defineQuestions([
 			'I suppose it makes no difference if you kill me or if I die just a little bit later, dearie.'
 		],
 		choices: ["That's right.", "That isn't true.", "That's still a long ways off."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -3119,7 +3119,7 @@ export const questions = defineQuestions([
 			"What? No, you're wrong...",
 			'Um, are things okay at home?'
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'good'],
 			['ok', 'good', 'bad', 'bad'],
 			['good', 'bad', 'good', 'good']
@@ -3135,7 +3135,7 @@ export const questions = defineQuestions([
 			"You're s'posed to go easy on kids! Are you stupid? Do you go to school and get stupid grades?"
 		],
 		choices: ["I'm smart.", "I'm good at PE.", 'Shut up.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['good', 'bad', 'good', 'good'],
 			['bad', 'ok', 'ok', 'good']
@@ -3151,7 +3151,7 @@ export const questions = defineQuestions([
 			"You're a big bully! Don't you think that's \"immature\"?"
 		],
 		choices: ['Now that you mention it...', "No, I don't think so.", "I'm not mature anyway."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['bad', 'good', 'ok', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -3167,7 +3167,7 @@ export const questions = defineQuestions([
 			"What's it like to be all kissy face with somebody?"
 		],
 		choices: ["It's incredible...", "I shouldn't tell you.", 'Ask your parents.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'good'],
 			['ok', 'good', 'ok', 'bad'],
 			['good', 'good', 'good', 'bad']
@@ -3183,7 +3183,7 @@ export const questions = defineQuestions([
 			"Hey, let's play a game! Guess what I wanna eat!"
 		],
 		choices: ['Hamburgers.', 'Humans.', 'Shut up.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['ok', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -3199,7 +3199,7 @@ export const questions = defineQuestions([
 			'Guess what I want you to read to me before you tuck me into bed!'
 		],
 		choices: ['An animal book.', 'A story about a Yakuza.', 'I have no idea.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -3215,7 +3215,7 @@ export const questions = defineQuestions([
 			'When you were little, what did you wanna be when you grow up?'
 		],
 		choices: ['A pro athlete.', 'I had no dream.', 'A winner in society.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'bad', 'bad', 'good'],
 			['ok', 'bad', 'good', 'ok']
@@ -3228,7 +3228,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['Oh, yeah. Maybe you know!', 'Where do babies come from?'],
 		choices: ['Storks deliver them.', 'Ask your parents.', 'The love between two people.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'good', 'bad', 'good'],
 			['good', 'ok', 'good', 'ok']
@@ -3244,7 +3244,7 @@ export const questions = defineQuestions([
 			"Ain't people your age suppose'ta be out on dates and stuff instead?"
 		],
 		choices: ['Right after this, kid.', 'Such a rude little boy...', "Dating's not important."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good'],
 			['good', 'good', 'good', 'good']
@@ -3260,7 +3260,7 @@ export const questions = defineQuestions([
 			"Didn't you feel like that when you were a kid, too?"
 		],
 		choices: ["It's not so bad-olescent.", 'Being a kid is tough.', "I don't remember."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'ok', 'good', 'good'],
 			['good', 'good', 'good', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -3276,7 +3276,7 @@ export const questions = defineQuestions([
 			'Hey, mister, when you eat curry, what kinda stuff do you add to it?'
 		],
 		choices: ['Soy sauce.', 'Pickled ginger.', 'Nothing.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -3292,7 +3292,7 @@ export const questions = defineQuestions([
 			'Hey, mister, will you gimme a yummy snack to eat?'
 		],
 		choices: ['Later.', 'No way.', 'What would you like?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'good'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -3308,7 +3308,7 @@ export const questions = defineQuestions([
 			'What was that, anyway?'
 		],
 		choices: ['A love letter.', 'A threat letter.', 'A coupon.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['bad', 'good', 'good', 'good'],
 			['good', 'ok', 'good', 'good']
@@ -3324,7 +3324,7 @@ export const questions = defineQuestions([
 			'Do you think they really mean it all the time?'
 		],
 		choices: ['Yes.', 'No, but they say it anyway.', "I'm cuter than most kids."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['good', 'ok', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -3337,7 +3337,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ["...Hey, mister. What're you doing here, anyway?", 'Are you bored?'],
 		choices: ["Yes, I'm bored.", "I'm actually pretty busy.", 'I never thought about it.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'good', 'bad', 'good']
@@ -3350,7 +3350,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ["...Hey, play with me! You're already here, so c'mon!", 'What are we gonna do, huh?'],
 		choices: ['Tag.', "I don't feel like playing.", 'Cruise for chicks.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['ok', 'good', 'bad', 'good'],
 			['ok', 'ok', 'good', 'ok']
@@ -3363,7 +3363,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ["...Hey, why'd you do this to me? ", 'Is it \'cause I wasn\'t a "good kid"?'],
 		choices: ['Yes.', 'No.', 'It has nothing to do with this.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'ok'],
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'bad', 'bad', 'good']
@@ -3379,7 +3379,7 @@ export const questions = defineQuestions([
 			'Are you fighting to help or protect the world or something?'
 		],
 		choices: ["That's right.", "I won't tell you.", 'It pays the bills.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'bad'],
 			['ok', 'bad', 'bad', 'good'],
 			['good', 'good', 'good', 'bad']
@@ -3395,7 +3395,7 @@ export const questions = defineQuestions([
 			'Did you cry whenever you had to get your shots, mister?'
 		],
 		choices: ['I did.', "I don't remember.", 'I actually enjoyed it.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'bad', 'bad', 'good'],
 			['ok', 'bad', 'good', 'bad']
@@ -3411,7 +3411,7 @@ export const questions = defineQuestions([
 			"I'm tired of being a kid. Didn't you feel that way when you were little, too?"
 		],
 		choices: ['Sure did.', 'Not really.', 'I want to be a kid forever.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'good', 'bad', 'good'],
 			['bad', 'ok', 'good', 'good']
@@ -3427,7 +3427,7 @@ export const questions = defineQuestions([
 			'I think the way you\'re treating me is "overfamiliar." I think...'
 		],
 		choices: ['We are friends.', "What's wrong with that?", "It's because you're cute."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'good', 'ok'],
 			['bad', 'ok', 'ok', 'bad'],
 			['good', 'bad', 'good', 'good']
@@ -3443,7 +3443,7 @@ export const questions = defineQuestions([
 			'Is it okay if I get mad right now?'
 		],
 		choices: ['Do it.', "Please don't.", "You're so cute."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'bad'],
 			['good', 'ok', 'bad', 'good'],
 			['ok', 'bad', 'good', 'good']
@@ -3459,7 +3459,7 @@ export const questions = defineQuestions([
 			"Isn't that, kinda... outdated thinking?"
 		],
 		choices: ['Sorry.', "It's for your own good.", "It's timeless."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'good', 'bad'],
 			['ok', 'bad', 'bad', 'good']
@@ -3475,7 +3475,7 @@ export const questions = defineQuestions([
 			"She said, \"I'll buy it for you on the way home,\" but she didn't buy it for me! That's SO unfair, right!?"
 		],
 		choices: ["That's not fair.", "It's your fault for being tricked.", "I'll buy it for you."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'good', 'good']
@@ -3491,7 +3491,7 @@ export const questions = defineQuestions([
 			'Me am really in soup, now. Do what you want. Me am ready if you want grill me, so...'
 		],
 		choices: ["I'll make you into soup.", "I don't want to eat you.", "I'll mince you."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'good', 'ok'],
 			['good', 'good', 'good', 'ok'],
 			['bad', 'bad', 'good', 'good']
@@ -3507,7 +3507,7 @@ export const questions = defineQuestions([
 			'Why you keep trampling here? What you humans thinking?'
 		],
 		choices: ["I'm sorry.", 'Should I take off my shoes?', 'Shut up.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['ok', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -3523,7 +3523,7 @@ export const questions = defineQuestions([
 			'Me not understand in what way you superior to me...'
 		],
 		choices: ['Youthfulness.', 'Cuteness.', 'Luckiness.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['good', 'bad', 'good', 'bad'],
 			['ok', 'bad', 'ok', 'good']
@@ -3536,7 +3536,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['...Me thought you not from around here. You human?', 'Why you come all the way here?'],
 		choices: ['For a treasure hunt.', 'For girls.', 'I just felt like it.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'bad', 'good', 'ok'],
 			['bad', 'ok', 'ok', 'good']
@@ -3552,7 +3552,7 @@ export const questions = defineQuestions([
 			'You not worry you get in trouble if those groups hear what you are doing to me?'
 		],
 		choices: ["That's true.", "I don't mind.", "It's for love."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good'],
 			['good', 'bad', 'good', 'ok']
@@ -3568,7 +3568,7 @@ export const questions = defineQuestions([
 			"Why you fight and put yourself in harm's way?"
 		],
 		choices: ['I want to get stronger.', 'Because I see an enemy.', "I don't actually know."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'bad'],
 			['bad', 'good', 'ok', 'ok'],
 			['bad', 'bad', 'ok', 'good']
@@ -3584,7 +3584,7 @@ export const questions = defineQuestions([
 			'Me really want to eat something.'
 		],
 		choices: ['Do not mock me.', 'Same goes for me.', 'Want to order something?'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'good'],
 			['good', 'bad', 'good', 'bad'],
 			['good', 'ok', 'good', 'bad']
@@ -3600,7 +3600,7 @@ export const questions = defineQuestions([
 			'What you thinking now?'
 		],
 		choices: ['How to negotiate.', 'Nothing.', 'How can I get popular?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'ok', 'bad', 'good'],
 			['ok', 'bad', 'good', 'ok']
@@ -3616,7 +3616,7 @@ export const questions = defineQuestions([
 			'There something you want say to me, right?'
 		],
 		choices: ['I want you.', 'Not really.', 'Let me touch your paw.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'ok', 'good', 'ok']
@@ -3632,7 +3632,7 @@ export const questions = defineQuestions([
 			'If you capture me, what you going to do to me?'
 		],
 		choices: ['Take pride in capturing you.', 'Use you to decorate the hall.', 'Nothing.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'bad', 'good', 'ok'],
 			['good', 'ok', 'ok', 'good']
@@ -3648,7 +3648,7 @@ export const questions = defineQuestions([
 			"You go back to your mother's arms. You need take nap now."
 		],
 		choices: ["I'm not that young.", "I'm not sleepy.", "After I'm done with this."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'good'],
 			['ok', 'good', 'ok', 'good'],
 			['good', 'ok', 'good', 'bad']
@@ -3668,7 +3668,7 @@ export const questions = defineQuestions([
 			"It keeps my foes' blood off.",
 			"That's what I want to know."
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['ok', 'ok', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -3684,7 +3684,7 @@ export const questions = defineQuestions([
 			'So why me in this situation right now? Why me at your mercy?'
 		],
 		choices: ['Times have changed.', 'Humans are powerful.', 'This is a difficult topic...'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['good', 'good', 'good', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -3700,7 +3700,7 @@ export const questions = defineQuestions([
 			'You given much thought, what if you go to place where you could die at any moment?'
 		],
 		choices: ["I've thought about it.", "I don't want kids.", "I'm not comfortable with this."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'bad', 'ok', 'good']
@@ -3716,7 +3716,7 @@ export const questions = defineQuestions([
 			'Why you not care for me like that? Why you treat me like this, then?'
 		],
 		choices: ['You look scary.', 'I want to cherish you.', "You're not a beast."],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'bad', 'good', 'bad'],
 			['bad', 'good', 'ok', 'good']
@@ -3732,7 +3732,7 @@ export const questions = defineQuestions([
 			'Me guessing you have power that me not have. But what is it...?'
 		],
 		choices: ['Academics.', 'Empathy.', 'Girl power.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'ok', 'ok'],
 			['good', 'bad', 'ok', 'good'],
 			['ok', 'bad', 'good', 'good']
@@ -3748,7 +3748,7 @@ export const questions = defineQuestions([
 			'Me want to ask some recommendations, so me can at least imagine.'
 		],
 		choices: ['Bread soaked in coffee.', "I don't have any.", 'Hunger is the best ingredient.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'good', 'bad', 'good'],
 			['good', 'bad', 'good', 'ok']
@@ -3764,7 +3764,7 @@ export const questions = defineQuestions([
 			'You have wishes you not can let go of, even after you die?'
 		],
 		choices: ["Everyone's happiness.", 'A grand funeral.', "I won't die."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['bad', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -3780,7 +3780,7 @@ export const questions = defineQuestions([
 			'Me want you to give me some nice "words of compassion"悪as my rival悪 as me pass away...!'
 		],
 		choices: ['Die in peace.', 'Why show mercy to my enemy?', '...I got nothing.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'bad'],
 			['ok', 'good', 'bad', 'bad'],
 			['ok', 'bad', 'good', 'good']
@@ -3796,7 +3796,7 @@ export const questions = defineQuestions([
 			'It look like you corner me... But how me know this not trick? How me know you really winning?'
 		],
 		choices: ["Because it's the truth.", "It's a lie.", "I don't know."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'bad'],
 			['good', 'bad', 'good', 'bad'],
 			['bad', 'bad', 'bad', 'good']
@@ -3812,7 +3812,7 @@ export const questions = defineQuestions([
 			'You had something you lost, and you not know how important it was until after it gone, right?'
 		],
 		choices: ['My pal who switched schools.', 'My ex-girlfriend...', "Quiet, I'm killing you now."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'bad', 'bad'],
 			['good', 'bad', 'good', 'bad'],
 			['bad', 'ok', 'bad', 'good']
@@ -3828,7 +3828,7 @@ export const questions = defineQuestions([
 			'Me not curse you, but me curse your commander! Me curse the one who order you...!'
 		],
 		choices: ['This was my choice.', 'Fighting me is bad luck.', 'Just try to escape.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'good', 'good']
@@ -3844,7 +3844,7 @@ export const questions = defineQuestions([
 			'So me am going to haunt you for the rest of your life. Me always right behind you...'
 		],
 		choices: ['That would be troublesome.', 'I could carry that weight.', "I don't get it..."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'good', 'bad'],
 			['bad', 'bad', 'bad', 'good']
@@ -3864,7 +3864,7 @@ export const questions = defineQuestions([
 			"You're just a sore loser.",
 			"I can't drink, I'm underage."
 		],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'bad'],
 			['bad', 'bad', 'bad', 'good'],
 			['bad', 'bad', 'good', 'bad']
@@ -3880,7 +3880,7 @@ export const questions = defineQuestions([
 			'Humans always want either an autograph or a self-hee, ho. Which is it, ho?'
 		],
 		choices: ['I want an autograph.', 'I want a photo.', 'Give me your credit card.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['good', 'bad', 'ok', 'good'],
 			['bad', 'ok', 'good', 'good']
@@ -3896,7 +3896,7 @@ export const questions = defineQuestions([
 			"I'm a super popular Shadow, you hee-know. My fans won't just sit around and take this, ho."
 		],
 		choices: ['Please forgive me.', 'Fans?', 'So what?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['good', 'bad', 'ok', 'good'],
 			['ok', 'bad', 'bad', 'good']
@@ -3912,7 +3912,7 @@ export const questions = defineQuestions([
 			"...You've come from some other company to scout me-hee out. There's no mistaking it, ho!"
 		],
 		choices: ['You got me.', "It's a misunderstanding.", "I've come to finish you off."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'ok'],
 			['bad', 'good', 'bad', 'ok'],
 			['bad', 'bad', 'good', 'good']
@@ -3928,7 +3928,7 @@ export const questions = defineQuestions([
 			"You know, a mascot's life isn't hee-easy. Are you sure you could handle all the adversity, ho?"
 		],
 		choices: ["I'm ready for it.", "You're right. I give up.", "You're a mascot?"],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'good', 'good', 'bad'],
 			['good', 'good', 'ok', 'bad'],
 			['bad', 'ok', 'bad', 'good']
@@ -3944,7 +3944,7 @@ export const questions = defineQuestions([
 			"Sorry, but I want you to go hee-home now. I'm already feeling so tired and weary, ho..."
 		],
 		choices: ['Sorry.', 'No.', 'You go home.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'bad'],
 			['bad', 'ok', 'good', 'good']
@@ -3960,7 +3960,7 @@ export const questions = defineQuestions([
 			"You'll probably break down in tears when you see my angry face. I'm a real monstrosity, ho!"
 		],
 		choices: ["That's scary...", "I'd need to see it to know.", "I'd like to see your angry face."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'ok']
@@ -3973,7 +3973,7 @@ export const questions = defineQuestions([
 		question: 0,
 		chats: ['...Hee-ho, are you here to interrogate me?', 'Have you made an appointment, ho?'],
 		choices: ['I have.', "That's not it.", 'Just tell me what you know.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['bad', 'good', 'bad', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -3989,7 +3989,7 @@ export const questions = defineQuestions([
 			'You new? Did you just get hee-hired, ho?'
 		],
 		choices: ['No.', "I'm a transfer student.", 'Yeah! Nice to meetcha!'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'ok'],
 			['good', 'bad', 'good', 'ok'],
 			['good', 'bad', 'good', 'good']
@@ -4002,7 +4002,7 @@ export const questions = defineQuestions([
 		question: 1,
 		chats: ['...Um, can I go now, ho?', "I'm busy, ho. It's tough being so popular."],
 		choices: ['You do sound busy.', "Your popularity won't last.", 'Who cares?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'good'],
 			['ok', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'ok', 'good']
@@ -4018,7 +4018,7 @@ export const questions = defineQuestions([
 			'Hee-how did you find out about me-ho?'
 		],
 		choices: ['Word of mouth.', 'A specialty site.', "I didn't know about you."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'ok'],
 			['good', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -4034,7 +4034,7 @@ export const questions = defineQuestions([
 			"But I've got a catch phrase that I'm famous for."
 		],
 		choices: ['Hee-ho!', 'Hee-haw!', 'Personaaa!'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'good', 'good'],
 			['ok', 'ok', 'good', 'ok'],
 			['ok', 'ok', 'good', 'good']
@@ -4050,7 +4050,7 @@ export const questions = defineQuestions([
 			'Where should I go? I want something yummy, ho!'
 		],
 		choices: ['A place with no wait.', 'A place with western toilets.', "You won't survive..."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['ok', 'good', 'ok', 'good']
@@ -4066,7 +4066,7 @@ export const questions = defineQuestions([
 			"This is all some kind of TV thing, hee-ho! Where's the camera?"
 		],
 		choices: ['Wow, you got me.', "What's all this now?", 'This is real.'],
-		reactions_table: [
+		reactionsTable: [
 			['ok', 'bad', 'good', 'good'],
 			['good', 'ok', 'ok', 'good'],
 			['ok', 'good', 'ok', 'bad']
@@ -4082,7 +4082,7 @@ export const questions = defineQuestions([
 			"I can't sadden my fans, ho. ...You catch my drift, don't you?"
 		],
 		choices: ["I'm rooting for you.", 'Tell me.', 'You have no fans.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'good', 'bad'],
 			['ok', 'ok', 'ok', 'good'],
 			['ok', 'good', 'ok', 'good']
@@ -4098,7 +4098,7 @@ export const questions = defineQuestions([
 			'How did I lose to you? I mean... I win when it comes to looks, ho.'
 		],
 		choices: ["You're right.", 'No, I do.', "It's all about heart."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'ok', 'ok'],
 			['ok', 'ok', 'good', 'bad'],
 			['bad', 'ok', 'ok', 'good']
@@ -4114,7 +4114,7 @@ export const questions = defineQuestions([
 			"I'm so sleepy, ho! I just want you to leave me alone..."
 		],
 		choices: ['That sounds tough.', "We're fighting right now.", "I'll give you eternal sleep."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'ok', 'ok', 'good'],
 			['good', 'ok', 'good', 'ok'],
 			['ok', 'good', 'ok', 'ok']
@@ -4130,7 +4130,7 @@ export const questions = defineQuestions([
 			"To tell you the hee-truth, this is all an act, ho. What do you think I'm really like, ho?"
 		],
 		choices: ["I can't imagine it.", "Don't care.", "You're fine as is."],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'ok', 'good'],
 			['ok', 'bad', 'good', 'good'],
 			['good', 'bad', 'ok', 'good']
@@ -4146,7 +4146,7 @@ export const questions = defineQuestions([
 			"I need to recover, ho. Don't you feel that way too...?"
 		],
 		choices: ['Yeah, sometimes.', 'Battle is what soothes me.', 'Quit whining.'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'ok'],
 			['ok', 'good', 'good', 'ok'],
 			['bad', 'good', 'ok', 'good']
@@ -4162,7 +4162,7 @@ export const questions = defineQuestions([
 			"You're showing off your strength to me, aren't you? I total-hee read your mind, ho."
 		],
 		choices: ["You're misunderstanding.", 'The hell are you saying?', 'Make me your apprentice!'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'ok'],
 			['ok', 'bad', 'ok', 'good'],
 			['good', 'bad', 'good', 'bad']
@@ -4178,7 +4178,7 @@ export const questions = defineQuestions([
 			"Maybe I should try something new! I don't want to fall into mediocrity, ho..."
 		],
 		choices: ["You're fine as is.", 'Time for a makeover.', "You'd still lose."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'good', 'bad'],
 			['ok', 'ok', 'good', 'bad'],
 			['bad', 'good', 'ok', 'good']
@@ -4194,7 +4194,7 @@ export const questions = defineQuestions([
 			'How can you do such terrible things to a cute hee-ho like me!?'
 		],
 		choices: ["I'm sorry.", 'Now that you mention it...', '...Cute?'],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'good', 'bad', 'ok'],
 			['ok', 'bad', 'ok', 'good'],
 			['bad', 'bad', 'ok', 'good']
@@ -4210,7 +4210,7 @@ export const questions = defineQuestions([
 			"I guess I'm asking if you've got a good re-hee-son for treating me so badly, ho."
 		],
 		choices: ["It's a means to an end.", 'Sorry.', 'I like bullying cute things.'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'bad'],
 			['good', 'bad', 'bad', 'good'],
 			['ok', 'bad', 'good', 'bad']
@@ -4226,7 +4226,7 @@ export const questions = defineQuestions([
 			'My chest is beating so fast, ho... What is this feeling...?'
 		],
 		choices: ['Are you all right?', "You're making it up.", "It's love."],
-		reactions_table: [
+		reactionsTable: [
 			['good', 'bad', 'bad', 'bad'],
 			['bad', 'good', 'bad', 'good'],
 			['bad', 'ok', 'good', 'bad']
@@ -4242,10 +4242,10 @@ export const questions = defineQuestions([
 			'My only choice now... is to retire, ho.'
 		],
 		choices: ["That's too far.", 'What are your plans?', 'You had a good run...'],
-		reactions_table: [
+		reactionsTable: [
 			['bad', 'good', 'bad', 'good'],
 			['bad', 'bad', 'bad', 'good'],
 			['good', 'bad', 'bad', 'bad']
 		]
 	}
-] as const satisfies readonly Question[]);
+]);

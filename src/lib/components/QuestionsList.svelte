@@ -61,7 +61,7 @@
 								<td class="font-bold text-gray-300">
 									{choice}
 								</td>
-								{#each question.reactions_table[i] as response, column (column)}
+								{#each question.reactionsTable[i] as response, column (column)}
 									<td class="px-2">
 										<div class="flex h-5 w-full min-w-5">
 											<img src={REACTION_TO_EMOJI[response]} class="mx-auto" alt={response} />
