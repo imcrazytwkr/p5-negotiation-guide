@@ -18,22 +18,22 @@ export type Reaction = 'good' | 'bad' | 'ok';
 
 export type QuestionStep = 0 | 1;
 
-export type ReactionRow = readonly [Reaction, Reaction, Reaction, Reaction];
+export type ReactionRow = Reaction[];
 
 export type Question = {
 	uid: string;
 	id: number;
 	type: ShadowType;
 	question: QuestionStep;
-	chats: readonly [string, string];
-	choices: readonly [string, string, string];
-	reactions_table: readonly [ReactionRow, ReactionRow, ReactionRow];
+	chats: string[];
+	choices: string[];
+	reactionsTable: ReactionRow[];
 };
 
 const SHADOW_TYPE_SET: ReadonlySet<string> = new Set(SHADOW_TYPES);
 const REACTIONS: ReadonlySet<string> = new Set(['good', 'bad', 'ok']);
 
-export function defineQuestions<const T extends readonly Question[]>(questions: T): T {
+export function defineQuestions(questions: readonly Question[]): readonly Question[] {
 	const uids = new Set<string>();
 
 	for (const question of questions) {
@@ -64,11 +64,11 @@ export function defineQuestions<const T extends readonly Question[]>(questions: 
 			throw new Error(`Question ${question.uid} must have 3 choices`);
 		}
 
-		if (question.reactions_table.length !== 3) {
+		if (question.reactionsTable.length !== 3) {
 			throw new Error(`Question ${question.uid} must have 3 reaction rows`);
 		}
 
-		for (const row of question.reactions_table) {
+		for (const row of question.reactionsTable) {
 			if (row.length !== 4 || row.some((reaction) => !REACTIONS.has(reaction))) {
 				throw new Error(`Question ${question.uid} has an invalid reaction row`);
 			}
